@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="materialize/css/materialize.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="flex-sort">
+    <div class="ex">
+      <h2>Exercise 1, 2</h2>
+      <p class="green-text" id="new"></p>
+      <input type="text" id="value" placeholder="type a value">
+      <input type="text" id="index" placeholder="type an index number">
+      <button class="btn" id="btn-ok">ok</button>
+    </div>
+</div>
+
+  <hr>
+
+<div class="flex-sort">
+
+
+  <div class="ex">
+    <h2>Exercise 3, 4, 5, 6</h2>
+    <p class="green-text" id="actions"></p>
+    <div class="btn-group">
+      <button class="btn" id="pop-to-array" onclick="popNumber()">pop</button>
+      <button class="btn" id="shift-to-array" onclick="shiftNumber()">shift</button>
+      <button class="btn" id="push-to-array" onclick="pushNumber()">push</button>
+      <button class="btn" id="unshift-array" onclick="unshiftNumber()">unshift</button>
+    </div>
+  </div>
+
+</div>
+
+  <div class="up">
+    <a href="#top">&uarr;</a>
+  </div>
+  <script src="main.js">
+
+  </script>
+  <script>
+		$(function(){
+
+	$(document).on( 'scroll', function(){
+
+		if ($(window).scrollTop() > 100) {
+			$('.up').addClass('show');
+		}
+		else {
+			$('.up').removeClass('show');
+		}
+	});
+});
+	</script>
+</body>
+</html>
